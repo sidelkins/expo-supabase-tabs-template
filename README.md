@@ -1,0 +1,1 @@
+# expo-supabase-tabs-template
