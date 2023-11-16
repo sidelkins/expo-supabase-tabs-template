@@ -9,7 +9,9 @@
 - SessionProvider: allows you to use session data in each tab
 
 #### Tabs Setup
+
 - Project Layout
+~~~
     .
     ├── app                  # This is where your routes (tabs/pages) live
     │   ├── _layout.js # Configures tab layout with SessionProvider
@@ -25,6 +27,7 @@
     ├── App.js              # Default Expo entry point
     ├── *.json             # package.json, app.json, etc.
     └── README.md
+~~~
 
 > **Q: Why is lib not inside app?**
 >
