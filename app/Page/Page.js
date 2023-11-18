@@ -10,15 +10,9 @@ function LogoTitle() {
   );
 }
 
-export default function Page() {
+export default () => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Stack.Screen
-        options={{
-            title: 'Page',
-            headerShown: false
-        }}
-      />
       <Text>Page</Text>
     </View>
   );

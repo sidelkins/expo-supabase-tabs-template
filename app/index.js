@@ -1,7 +1,7 @@
 import { Redirect } from 'expo-router';
 import { useSession } from '../lib/AuthContext';
 
-export default function Page() {
+export default () => {
   const { session } = useSession();
   
   return(
