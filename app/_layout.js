@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router/tabs';
 import { SessionProvider, useSession } from '../lib/AuthContext';
 
-export default function AppLayout() {
+export default () => {
   return (
     <SessionProvider>
       <Tabs>

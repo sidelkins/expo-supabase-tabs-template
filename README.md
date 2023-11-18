@@ -14,18 +14,22 @@
 ~~~
     .
     ├── app                  # This is where your routes (tabs/pages) live
-    │   ├── _layout.js # Configures tab layout with SessionProvider
-    │   ├── index.js # Default home page that we use to redirect
-    │   ├── Home.js # Example page (default redirect)
-    │   ├── Page.js # Example page
-    │   └── ...                 # etc.
-    ├── assets                    # Default Expo assets folder
-    ├── lib                     # Your project files you do not want in routes
+    │   ├── _layout.js       # Configures tab layout with SessionProvider, hides 'index' tab
+    │   ├── index.js         # Default page that we use to redirect
+    │   ├── Home             # Example home page (default redirect)
+    │   │   ├── _layout.js   #
+    │   │   └── Home.js      #
+    │   ├── Page             # Example blank page
+    │   │   ├── _layout.js   #
+    │   │   └── Page.js      #
+    │   └── ...              # etc.
+    ├── assets               # Default Expo assets folder
+    ├── lib                  # Your project files you do not want in routes
     │   ├── AuthContext.js
     │   ├── supabase.js
-    │   └── components # Custom components 
-    ├── App.js              # Default Expo entry point
-    ├── *.json             # package.json, app.json, etc.
+    │   └── components       # Custom global components 
+    ├── App.js               # Default Expo entry point
+    ├── *.json               # package.json, app.json, etc.
     └── README.md
 ~~~
 
@@ -39,3 +43,14 @@ The entry point for the application is set to the routere
 - babel.config,js
 After presets line, add plugins
 `plugins: ['expo-router/babel],`
+
+#### ToDo
+- [x] Folder structure
+- [ ] Component structure
+    - [ ] Global
+    - [ ] Route/tab specific
+- [ ] Authentication
+    - [ ] Redirect based on session
+    - [ ] Account page
+    - [ ] Login/Signup page
+- [ ] Testing (Jest)
